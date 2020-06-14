@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     if (Character.isLetter(searchData.charAt(0))) {
                         intent.setData(Uri.parse("geo:?q=" + searchData));
-                    }
-                    else {
+                    } else {
                         intent.setData(Uri.parse("geo:" + searchData));
                     }
                     startActivity(intent);
